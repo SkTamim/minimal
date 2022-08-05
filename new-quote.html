@@ -161,9 +161,9 @@
 
 
         <section class="container-fluid my-4">
+            <!----------------- LEFT NAVIGATION START ---------------------->
             <div class="row">
-                <!----------------- LEFT NAVIGATION START ---------------------->
-                <div class="col-md-4 col-lg-3 border-end d-flex flex-column left-navigation">
+                <div class="col align-items-center justify-content-around d-flex left-navigation">
                     <a href="my-account.html" class="navigation-item px-2 my-2 py-3 d-flex align-items-center">
                         <i class="bi bi-person-circle"></i>
                         <span>My Account</span>
@@ -183,38 +183,37 @@
 
                     <button class="btn main-btn logout-btn">Log Out</button>
                 </div>
-                <!------------------- LEFT NAVIGATION END --------------->
+            </div>
+            <!------------------- LEFT NAVIGATION END --------------->
 
-                <!----------------- RIGHT CONTENT AREA START ----------------->
-                <div class="col-md-8 col-lg-9 ps-md-4 mt-3">
-                    <h2 class="dashboard-main-heading">Create new orders</h2>
-                    <form class="row my-4">
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="requirementName" class="form-label">Requirement name</label>
-                                <input type="text" class="form-control" id="requirementName">
+
+            <!----------------- RIGHT CONTENT AREA START ----------------->
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-3">
+                        <h2 class="dashboard-main-heading">Create new orders</h2>
+                        <form class="row my-4">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="requirementName" class="form-label">Requirement name</label>
+                                    <input type="text" class="form-control" id="requirementName">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="requirementDescription" class="form-label">Requirement description</label>
+                                    <textarea class="form-control" id="requirementDescription" rows="3"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="requirementFile" class="form-label">Upload requirement file</label>
+                                    <input class="form-control" type="file" id="requirementFile">
+                                </div>
+                                <div class="mt-4 text-end">
+                                    <button class="btn main-btn">Order</button>
+                                </div>
                             </div>
-
-                            <div class="mb-3">
-                                <label for="requirementDescription" class="form-label">Requirement description</label>
-                                <textarea class="form-control" id="requirementDescription" rows="3"></textarea>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="requirementFile" class="form-label">Upload requirement file</label>
-                                <input class="form-control" type="file" id="requirementFile">
-                            </div>
-
-                            <div class="mt-4 text-end">
-                                <button class="btn main-btn">Order</button>
-                            </div>
-                        </div>
-
-                    </form>
-
+                        </form>
+                    </div>
                 </div>
             </div>
-
             <!----------------- RIGHT CONTENT AREA END ----------------->
         </section>
     </main>

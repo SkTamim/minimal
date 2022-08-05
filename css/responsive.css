@@ -30,3 +30,17 @@
         min-height: 270px;
     }
 }
+
+@media screen and (max-width:880px) {
+    .navigation-item span {
+        font-size: 14px;
+    }
+
+    .navigation-item i {
+        font-size: 20px;
+    }
+
+    .logout-btn {
+        padding: 8px 25px;
+    }
+}

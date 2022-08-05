@@ -460,7 +460,7 @@ body {
 
 .logout-btn {
     width: max-content;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 #my-account-accordion .accordion-button {
