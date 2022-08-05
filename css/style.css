@@ -121,6 +121,10 @@ body {
     overflow: hidden;
 }
 
+.services-section .card .card-title {
+    text-transform: uppercase;
+}
+
 .services-section .card-body {
     z-index: 2;
     display: flex;
@@ -182,9 +186,9 @@ body {
 
 
 /* HOW IT WORKS SECTION START */
-.how-works-section {
-    /* background-color: #d4dfe9; */
-}
+/* .how-works-section {
+    background-color: #d4dfe9;
+} */
 
 .works-card {
     padding: 20px;
@@ -572,7 +576,11 @@ body {
 
 /* ============== SERVICE DETAILS PAGE START ============= */
 .service-header-section {
-    background: url(../images/benefit-1.jpg) no-repeat center center/cover;
+    background-color: var(--color-primary);
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
     min-height: 350px;
 }
@@ -610,11 +618,6 @@ body {
     font-size: 25px;
 }
 
-/* SERVICE INJECTION SECTION */
-.injection-moulding li {
-    font-size: 18px;
-    color: #72747a;
-}
 
 .injection-moulding-capabilites .main-heading {
     font-size: 25px;
