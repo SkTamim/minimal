@@ -115,8 +115,10 @@ body {
     background-image: var(--bg-image);
     background-position: center center;
     background-size: cover;
-    min-height: 230px;
+    min-height: 270px;
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .services-section .card-body {
@@ -152,11 +154,10 @@ body {
 /* MANUFACTURING SECTION START */
 .manufacturing-card {
     border-radius: 5px;
-    border: 1px solid #6aa9f6;
+    border: 1px solid #eee;
     width: 120px;
     padding: 5px 10px;
     text-align: center;
-    background-color: #6aa9f648;
     margin: 10px;
     height: 120px;
     display: flex;
@@ -173,7 +174,6 @@ body {
 .manufacturing-card-title {
     text-transform: uppercase;
     font-weight: bold;
-    color: #5688c6;
     margin-top: 10px;
     font-size: 14px;
 }
@@ -183,15 +183,16 @@ body {
 
 /* HOW IT WORKS SECTION START */
 .how-works-section {
-    background-color: #d4dfe9;
+    /* background-color: #d4dfe9; */
 }
 
 .works-card {
     padding: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     text-align: center;
     position: relative;
+    border-right: 1px solid #d7d7d7;
 }
 
 .works-card p,
@@ -616,9 +617,10 @@ body {
 
 /* UTILITY CLASSES */
 .main-heading {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--color-primary);
+    text-transform: uppercase;
 }
 
 .sub-heading {
@@ -633,13 +635,15 @@ body {
 
 .main-btn {
     background-color: #6aa9f6;
+    background-color: var(--color-primary);
     color: #fff;
     padding: 10px 30px;
     border: none;
+    text-transform: uppercase;
 }
 
 .main-btn:hover {
-    background-color: #5f99df;
+    background-color: #222f55;
     color: #fff;
 }
 
