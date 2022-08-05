@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Better</title>
+
+    <!-- BOOTSTRAP CSS FILE -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- BOOTSTRAP ICON CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- SWIPER SLIDER CSS FILE CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- MAIN STYLE SHEET  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <main>
+        <!-- HERO SECTION START -->
+        <section class="hero-section d-flex align-items-center justify-content-center py-4">
+            <div class="menu-icon">
+                <i class="bi bi-list" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas"></i>
+            </div>
+
+            <div class="container hero-info">
+                <div class="row">
+                    <div class="col-md-12 mt-3 w-max text-center">
+                        <h1 class="main-heading text-white mb-4 text-uppercase">Build better</h1>
+                        <p class="text-white text-18 fw-500">Your all manufacturing requirment in one place, from prototype to production, we provide DFM to over customer through pricision parts, consumer goods. </p>
+                        <a href="#" class="hero-btn call-to-action mt-4">GET QUOTE </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MENU OFFCANVAS START -->
+            <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="ms-auto text-white bg-transparent border-0 h5" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <a href="#" class="main-nav-link">Resources</a>
+                    <a href="#" class="main-nav-link">Contact Us</a>
+
+                    <div class="dropdown">
+                        <button class="btn main-nav-link dropdown-toggle mx-auto" type="button" id="dashboardDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dashboardDropdown">
+                            <li><a class="dropdown-item" href="my-account.html">My account</a></li>
+                            <li><a class="dropdown-item" href="new-quote.html">New quote</a></li>
+                            <li><a class="dropdown-item" href="my-quote.html">My quote</a></li>
+                            <li><a class="dropdown-item" href="help.html">Help & Support</a></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn main-btn d-block mt-4 mx-auto" data-bs-toggle="modal" data-bs-target="#signUpModal">
+                        Sign Up
+                    </button>
+                    <button type="button" class="btn main-btn mt-4 mx-auto" data-bs-toggle="modal" data-bs-target="#signInModal">
+                        Sign In
+                    </button>
+                </div>
+            </div>
+            <!-- MENU OFFCANVAS END -->
+
+
+            <!-- SIGN UP MODAL START -->
+            <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signUpModalLabel">Sing Up</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signUpName" class="form-label">Name </label>
+                                    <input type="text" class="form-control" id="signUpName" placeholder="Sk Tamim">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="signUpEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="signUpEmail" placeholder="sktamimdev@gmail.com">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="signUpJob" class="form-label">Job title</label>
+                                    <input type="text" class="form-control" id="signUpJob" placeholder="Developer">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="signUpNumber" class="form-label">Phone number</label>
+                                    <input type="tel" class="form-control" id="signUpNumber" placeholder="1234567890">
+                                </div>
+
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="newslatterCheck">
+                                    <label class="form-check-label text-grey text-muted" for="newslatterCheck" style="font-size: 12px;">
+                                        I agree to receive service and product updates, special offers and discounts
+                                    </label>
+                                </div>
+
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="agreeCheck">
+                                    <label class="form-check-label text-grey text-muted" for="agreeCheck" style="font-size: 12px;">
+                                        I reviewed and agree to primafroge <a href="#">Term and Condition</a> and <a href="#">privacy policy</a>
+                                    </label>
+                                </div>
+
+                                <div class="text-end mt-4">
+                                    <button type="submit" class="btn gradient-btn">Sign Up</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SIGN UP MODAL END -->
+
+            <!-- SIGN IN MODAL START -->
+            <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="signInEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="signInEmail" placeholder="sktamimdev@gmail.com">
+                                </div>
+
+                                <label for="signInPassword" class="form-label">Password</label>
+                                <div class="input-group mb-3">
+                                    <input type="password" class="form-control" id="signInPassword">
+                                    <span class="input-group-text" id="passwordToggleBtn" style="cursor: pointer;">
+                                        <i class="bi bi-eye"></i>
+                                    </span>
+                                </div>
+
+                                <div class="text-end mt-4">
+                                    <button type="submit" class="btn gradient-btn">Sign In</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SIGN IN MODAL END -->
+
+        </section>
+        <!-- HERO SECTION END -->
+
+
+        <!-- SERVICES SECTION START -->
+        <section class="services-section container my-5">
+            <h2 class="main-heading text-center">Manufacturing Capabilitis</h1>
+                <div class="swiper service-swiper mt-4">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-2.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center fw-500 mb-4">CNC MACHINING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-3.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">INJECTION MOULDING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-4.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">SHEET METAL </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-5.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">DIE CASTING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-6.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">URETHANE CASTING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-7.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">3D PRINTING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-8.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">ALUMINIUM EXTRACTION </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-9.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">FORGING </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card" style="--bg-image:url(../images/benefit-10.jpg)">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-500 text-center mb-4">PROTYPRING & PRE PRODUCTION </h5>
+                                    <a href="service-details.html" class="service-link btn mx-auto">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+
+        <!-- MANUFACTURING SECTION START -->
+        <section class="container manufacturing-section my-5 pt-5">
+            <h2 class="main-heading text-center">MANUFACTURING APPLICATION FOR EVERY INDUSTRY</h2>
+
+            <div class="manufacturing-swiper d-flex flex-wrap justify-content-center mt-4">
+
+                <div class="manufacturing-card">
+                    <img src="images/automotive.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">AUTOMOTIVE</h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/supplier.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">INDUSTRIAL</h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/aerospace.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">AEROSPACE &DEFENCE </h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/inflation.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">CONSUMER PRODUCTS </h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/energy-consumption.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">ENERGY</h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/consultation.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">MEDICAL &PHARMA </h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/robot.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">ROBOTICS& MACHINE BUILDING </h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/plug.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">ELECTRONICS</h5>
+                </div>
+
+                <div class="manufacturing-card">
+                    <img src="images/video-conference.png" alt="Manufacturing Image">
+                    <h5 class="manufacturing-card-title">EDUCATION</h5>
+                </div>
+
+            </div>
+        </section>
+        <!-- MANUFACTURING SECTION END -->
+
+
+        <!-- HOW IT WORKS SECTION START -->
+        <section class="how-works-section py-5">
+            <div class="container">
+                <h1 class="main-heading">HOW ITS WORK </h1>
+
+                <div class="works-card-area row mt-3">
+                    <div class="col-lg-6 col-xl-3 my-3">
+                        <div class="works-card">
+                            <div class="step-counter">1</div>
+                            <img src="images/file.png" alt="Step image">
+                            <h5 class="works-card-heading my-3">UPLOAD YOU CAD OR 2D,3D FILE </h5>
+                            <p> Get instant pricing.primaforge gives you pricing instantly. No more waiting days for quote.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3 my-3">
+                        <div class="works-card">
+                            <div class="step-counter">2</div>
+                            <img src="images/box.png" alt="Step image">
+                            <h5 class="works-card-heading my-3">CHOSE THE PROCESS </h5>
+                            <p>After uploading file to plateform you have to chose the process of manufacturing, this platform gives our customers to select various process in which number of material can be selected in single click.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3 my-3">
+                        <div class="works-card">
+                            <div class="step-counter">3</div>
+                            <img src="images/ethics.png" alt="Step image">
+                            <h5 class="works-card-heading my-3">ORDER YOUR PART </h5>
+                            <p> After selecting process and material and lead time of your part, you can order after completing the process.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-xl-3 my-3">
+                        <div class="works-card">
+                            <div class="step-counter">4</div>
+                            <img src="images/delivery-box.png" alt="Step image">
+                            <h5 class="works-card-heading my-3">RECIVE YOUR PART </h5>
+                            <p> Receive your order to your at desired place, fast as possible.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- HOW IT WORKS SECTION END -->
+
+
+        <!-- COUSTOMERS SECTION START -->
+        <section class="container coustomers-section py-5">
+            <h2 class="main-heading text-center">OUR COUSTOMERS </h2>
+
+            <div class="swiper coustomers-swiper mt-4">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="coustomers-card">
+                            <img src="images/Eicher-logo.png" alt="Coustomer Image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="coustomers-card">
+                            <img src="images/motherson-sumi-systems-limited-mssl-logo-vector.svg" alt="Coustomer Image" style="height: 170px;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="coustomers-card">
+                            <img src="images/Torrent-Pharma-logo.png" alt="Coustomer Image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="coustomers-card">
+                            <img src="images/rajesh_LOGO- png.webp" alt="Coustomer Image" style="height: 70px; width: 140px;">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="coustomers-card">
+                            <img src="images/Cipla_logo.svg.png" alt="Coustomer Image" style="    width: 160px; height: 60px;">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <p class="coustomers-section-para"># FAST TRACK YOUR WAY TO BUILD PARTS </p>
+        </section>
+        <!-- COUSTOMERS SECTION END -->
+
+        <!-- FOLLOW SECTION START -->
+        <section class="follow-section py-5">
+            <h2 class="main-heading text-center mx-3">FOLLOW US ON SOCIAL MEDIA </h2>
+            <div class="container mt-4">
+                <div class="row">
+
+                    <div class="col">
+                        <a href="#" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="social-link">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="#" class="social-link">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- FOLLOW SECTION END -->
+
+
+        <!-- CALL TO ACTION SECTION START -->
+        <section class="team-section container py-5 text-center">
+            <h2 class="main-heading text-center">READY TO ORDER PARTS ONLINE? </h2>
+
+            <a href="#" class="call-to-action">GET QUOTE </a>
+        </section>
+        <!-- CALL TO ACTION SECTION END -->
+
+        <!-- REVIEWS SECTION START -->
+        <section class="team-section container py-5">
+            <h2 class="main-heading text-center">SOCIAL REVIEWS </h2>
+
+
+            <div class="swiper review-swiper mt-4">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center">
+                                <img src="images/review-avtar.jpg" alt="Review Image" class="review-avtar me-3">
+                                <h5 class="m-0 mx-2">Sk Tamim</h5>
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </div>
+                            <p class="review-para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis, consectetur modi sit illo corporis quibusdam necessitatibus quam, similique magni asperiores ex aspernatur veniam ducimus itaque ratione, obcaecati omnis. Ducimus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center">
+                                <img src="images/review-avtar.jpg" alt="Review Image" class="review-avtar me-3">
+                                <h5 class="m-0 mx-2">Sk Shahim</h5>
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </div>
+                            <p class="review-para">
+                                Illo corporis quibusdam necessitatibus quam, similique magni asperiores ex aspernatur veniam ducimus itaque ratione, obcaecati omnis. Ducimus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="d-flex align-items-center">
+                                <img src="images/review-avtar.jpg" alt="Review Image" class="review-avtar me-3">
+                                <h5 class="m-0 mx-2">Raja</h5>
+                                <a href="#">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </div>
+                            <p class="review-para">
+                                Illo corporis quibusdam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt blanditiis assumenda repellat illo eum id ipsa impedit aperiam ullam consectetur. necessitatibus quam, similique magni asperiores ex aspernatur veniam ducimus itaque ratione, obcaecati omnis. Ducimus.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <!-- REVIEWS SECTION END -->
+
+
+        <!-- CONTACT SRCTION START -->
+        <section class="contact-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="contact-info mb-5">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-telephone me-3"></i>
+                                <h5 class="sub-heading">CALL US </h5>
+                            </div>
+                            <p>1 (234) 567-891, 1 (234) 987-654</p>
+                        </div>
+                        <div class="contact-info mb-5">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-geo-alt me-3"></i>
+                                <h5 class="sub-heading">LOCATION </h5>
+                            </div>
+                            <p>121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+                        </div>
+                        <div class="contact-info mb-5">
+                            <div class="d-flex align-items-center">
+                                <svg class="me-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" viewBox="0 0 512.00042 512" id="svg-f65a">
+                                    <path d="m172.578125 310.394531v2.308594h67.191406c6.414063 0 12.054688 7.953125 12.054688 17.183594 0 9.234375-5.640625 17.695312-12.054688 17.695312h-91.300781c-7.183594 0-17.441406-4.871093-17.441406-12.308593v-24.878907c0-40.265625 80.789062-63.347656 80.789062-95.917969 0-8.207031-5.128906-18.210937-19.492187-18.210937-10.257813 0-19.234375 5.128906-19.234375 19.238281 0 7.4375-7.953125 14.617188-21.03125 14.617188-10.257813 0-17.953125-4.617188-17.953125-20.773438 0-31.289062 28.726562-49.242187 57.960937-49.242187 29.753906 0 59.757813 18.722656 59.757813 53.089843 0 55.652344-79.246094 73.863282-79.246094 97.199219zm216.199219-20.773437c0-9.230469-4.101563-18.464844-12.308594-18.464844h-11.027344v-17.953125c0-8.460937-10.003906-12.054687-20.007812-12.054687-10 0-20.003906 3.59375-20.003906 12.054687v17.953125h-22.054688l45.394531-91.046875c.769531-1.792969 1.28125-3.332031 1.28125-4.871094 0-9.234375-13.078125-15.132812-20.003906-15.132812-6.414063 0-12.824219 2.820312-16.671875 10.257812l-59.242188 116.183594c-1.539062 2.820313-2.054687 5.640625-2.054687 7.691406 0 8.976563 5.898437 13.851563 13.335937 13.851563h60.015626v27.183594c0 8.207031 10.003906 12.3125 20.003906 12.3125 10.003906 0 20.007812-4.105469 20.007812-12.3125v-27.183594h11.027344c6.15625 0 12.308594-9.234375 12.308594-18.46875zm-48.105469 167.53125c-17.921875 7.503906-36.804687 12.554687-56.128906 15.003906-10.957031 1.390625-18.710938 11.402344-17.320313 22.359375 1.386719 10.925781 11.367188 18.714844 22.355469 17.324219 22.90625-2.90625 45.292969-8.894532 66.546875-17.792969 10.1875-4.269531 14.988281-15.984375 10.71875-26.171875-4.265625-10.1875-15.980469-14.992188-26.171875-10.722656zm116.710937-72.226563c-8.769531-6.710937-21.324218-5.039062-28.039062 3.730469-11.757812 15.367188-25.519531 29.113281-40.898438 40.855469-8.78125 6.699219-10.464843 19.25-3.765624 28.03125 6.714843 8.792969 19.269531 10.453125 28.035156 3.761719 18.199218-13.894532 34.484375-30.15625 48.398437-48.339844 6.710938-8.773438 5.039063-21.324219-3.730469-28.039063zm37.125-117.773437c-10.949218-1.386719-20.964843 6.371094-22.351562 17.328125-2.445312 19.320312-7.484375 38.199219-14.980469 56.121093-4.261719 10.1875.542969 21.90625 10.730469 26.167969 10.148438 4.246094 21.890625-.496093 26.171875-10.730469 8.886719-21.253906 14.863281-43.636718 17.761719-66.535156 1.386718-10.957031-6.371094-20.964844-17.332032-22.351562zm-265.167968 205.003906c-107.941406-13.691406-189.339844-106.214844-189.339844-215.210938 0-119.894531 97.023438-216.945312 216.941406-216.945312 108.996094 0 201.511719 81.398438 215.207032 189.34375 1.390624 10.957031 11.414062 18.714844 22.355468 17.324219 10.957032-1.390625 18.714844-11.398438 17.324219-22.359375-16.101563-126.933594-124.492187-224.308594-254.886719-224.308594-142.003906 0-256.941406 114.921875-256.941406 256.945312 0 130.527344 97.496094 238.804688 224.304688 254.894532 10.929687 1.382812 20.964843-6.335938 22.359374-17.324219 1.390626-10.957031-6.367187-20.96875-17.324218-22.359375zm0 0"></path>
+                                </svg>
+                                <h5 class="sub-heading">TIMING </h5>
+                            </div>
+                            <p>Mon - Fri …… 10 am - 8 pm, Sat, Sun ....… Closed</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="contact-form">
+                            <h1 class="main-heading mb-4">contact us </h1>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control" id="email" placeholder="Enter a valid email address">
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" id="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SRCTION END -->
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="main-footer">
+        <div class="d-flex justify-content-evenly px-3 py-5 flex-wrap">
+            <div class="my-3">
+                <h3 class="sub-heading text-white">RESOURCES</h3>
+                <ul>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Term and condition</a></li>
+                    <li><a href="#"> Data protection policy</a></li>
+                    <li><a href="#">Privacy settings</a></li>
+                </ul>
+            </div>
+
+            <div class="my-3">
+                <h3 class="sub-heading text-white">Contacts us</h3>
+                <p class="text-white" style="font-size:20px ;">xyz@prima.com <br /> India </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2022 All Rights Reserved
+        </div>
+
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- BOOTSTRAP JS FILE -->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/main.js"></script>
+
+    <!-- SWIPER SLIDER JS FILE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".service-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                548: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+
+        var swiperThree = new Swiper(".coustomers-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+                548: {
+                    slidesPerView: 3,
+                },
+                333: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+
+        var swiperFour = new Swiper(".review-swiper", {
+            slidesPerView: 1,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

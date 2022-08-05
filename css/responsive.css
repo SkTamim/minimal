@@ -1,0 +1,32 @@
+@media screen and (max-width:768px) {
+    .hero-info {
+        margin-top: 70px;
+    }
+
+    .goal-image {
+        width: 100%;
+        right: 0;
+    }
+
+    .left-navigation {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-heading {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        padding: 50px 20px;
+    }
+
+    .follow-section .social-link {
+        font-size: 25px;
+    }
+
+    .review-card {
+        min-height: 270px;
+    }
+}
